@@ -1,0 +1,102 @@
+body {
+    background-color: #e0e5ec; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.calc {
+    background-color: #2a2d37; 
+    padding: 15px;
+    height: 420px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        inset 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.dup, .dme {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 5px 0;
+}
+
+
+.u_button, .m_button {
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.u_button {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.m_button {
+    background-color: #4a4e5a; 
+    color: white;
+}
+
+
+.equal {
+    grid-row: span 4;
+    height: auto;
+    background-color: #feca57; 
+    border-radius: 12px;
+}
+
+
+.u_button:hover {
+    background-color: #ff4757; 
+    transform: translateY(-2px);
+}
+
+.m_button:hover {
+    background-color: #5a5f6e; 
+    transform: translateY(-2px);
+}
+
+.equal:hover {
+    background-color: #ffb142; 
+    transform: translateY(-2px);
+}
+
+/* Effet de pression */
+.u_button:active, 
+.m_button:active, 
+.equal:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
